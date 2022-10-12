@@ -29,7 +29,12 @@ Counter >> decrement [
 	count := count - 1
 ]
 
-{ #category : #accessing }
+{ #category : #API }
 Counter >> increment [
 	count := count + 1
+]
+
+{ #category : #initialization }
+Counter >> initialize [
+	count := 0
 ]

@@ -27,3 +27,11 @@ CounterTest >> testIncrement [
 	c count: 0; increment; increment.
 	self assert: c count equals: 2
 ]
+
+{ #category : #tests }
+CounterTest >> testInitialize [
+	self
+		assert:
+		(Counter new increment; increment; count)
+		equals: 2
+]
